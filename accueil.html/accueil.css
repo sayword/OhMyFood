@@ -1,0 +1,218 @@
+body {
+  margin: 0%;
+  font-family: 'Roboto', sans-serif;
+}
+
+header {
+  text-align: center;
+}
+
+header h2 {
+  font-family: 'Shrikhand', cursive;
+  margin-top: 4%;
+  margin-bottom: 2.5%;
+}
+
+header p {
+  background-color: #dddddd;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  margin: 0%;
+  -webkit-box-shadow: inset 0px 7px 15px -15px rgba(0, 0, 0, 0.84);
+  box-shadow: inset 0px 7px 15px -15px rgba(0, 0, 0, 0.84);
+  color: rgba(0, 0, 0, 0.836);
+}
+
+header p .fas {
+  margin-right: 4%;
+}
+
+#reservation {
+  text-align: center;
+  background-color: #f1f1f1;
+  padding-bottom: 15%;
+  padding-top: 10%;
+}
+
+#reservation h2 {
+  margin: 0%;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#reservation #boutton_reservation {
+  font-family: 'Roboto', sans-serif;
+  border-radius: 30px;
+  padding-top: 4%;
+  padding-bottom: 4%;
+  width: 55%;
+  color: white;
+  font-size: 93%;
+  border: none;
+  background: #000324;
+  background: linear-gradient(357deg, rgba(0, 3, 36, 0.204919) 0%, #9356dc 0%, #ff79da 100%);
+  box-shadow: 7px 10px 15px -9px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 7px 10px 15px -9px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 7px 10px 15px -9px rgba(0, 0, 0, 0.5);
+}
+
+#reservation p {
+  color: rgba(0, 0, 0, 0.63);
+  margin-bottom: 7%;
+}
+
+#fonctionnement {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 17%;
+}
+
+#fonctionnement h2 {
+  margin-left: auto;
+  margin-right: auto;
+  width: 85%;
+  margin-top: 12%;
+}
+
+#fonctionnement ol {
+  padding: 0%;
+  width: 85%;
+  margin-left: 10%;
+  margin-right: auto;
+  list-style: none;
+}
+
+#fonctionnement li {
+  background-color: #f1f1f1;
+  border-radius: 20px;
+  margin-top: 8%;
+  padding: 10px 10px 10px 0px;
+  font-weight: 600;
+  list-style: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 3px 7px 17px -4px rgba(0, 0, 0, 0.22);
+  box-shadow: 3px 7px 17px -4px rgba(0, 0, 0, 0.22);
+}
+
+#fonctionnement li p {
+  background-color: #9356dc;
+  color: white;
+  width: 5%;
+  text-align: center;
+  margin-right: 8%;
+  margin-left: -2%;
+  border-radius: 20px;
+  font-weight: 400;
+  padding: 1.3% 1.3% 1% 1.3%;
+  font-size: 90%;
+}
+
+#fonctionnement li .fas {
+  margin-right: 10%;
+  font-size: 115%;
+  color: rgba(0, 0, 0, 0.562);
+}
+
+#menu {
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 10%;
+  padding-top: 7%;
+  background-color: #f1f1f1;
+}
+
+#menu .vignette_nouveau {
+  background-color: #91dfc1;
+  padding: 1.8%;
+  width: 22%;
+  text-align: center;
+  font-weight: 900;
+  color: #039161;
+  border-radius: 5%;
+  position: absolute;
+  margin-left: 59%;
+  margin-top: 4%;
+}
+
+#menu .vignette_resto {
+  background-color: white;
+  margin-bottom: 5%;
+  border-radius: 15px 15px 15px 15px;
+  padding-bottom: 5%;
+}
+
+#menu .vignette_resto i {
+  font-size: 140%;
+  margin-right: 10%;
+  margin-top: -11%;
+  float: right;
+  font-size: 160%;
+}
+
+#menu .vignette_resto h3 {
+  margin: 0%;
+  margin-bottom: 1.5%;
+  margin-left: 3.5%;
+  margin-top: 3%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#menu .vignette_resto h4 {
+  margin: 0%;
+  font-weight: 400;
+  margin-left: 3.5%;
+}
+
+#menu img {
+  width: 100%;
+  height: 180px;
+  border-radius: 15px 15px 0% 0%;
+}
+
+footer {
+  padding-left: 7%;
+  padding-right: 5%;
+  background-color: #363636;
+  color: white;
+  padding-top: 7%;
+  padding-bottom: 10%;
+}
+
+footer h3 {
+  font-family: 'Shrikhand', cursive;
+  margin-top: 0%;
+  font-weight: 400;
+}
+
+footer ul {
+  margin: 0%;
+  list-style: none;
+  padding: 0%;
+}
+
+footer ul li {
+  line-height: 180%;
+}
+
+footer ul #couverts i {
+  font-size: 80%;
+  margin-right: 4%;
+}
+
+footer ul #partenaire i {
+  font-size: 65%;
+  margin-right: 3%;
+}
+
+footer ul .mention_contact {
+  color: rgba(255, 255, 255, 0.836);
+}
+/*# sourceMappingURL=accueil.css.map */

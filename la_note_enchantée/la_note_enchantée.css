@@ -1,0 +1,169 @@
+@charset "UTF-8";
+body {
+  margin: 0%;
+  font-family: 'Roboto', sans-serif;
+}
+
+header {
+  text-align: center;
+}
+
+header .fas {
+  float: left;
+  margin-left: 6%;
+  font-size: 130%;
+  margin-top: 2.8%;
+  color: #333333;
+}
+
+header p {
+  font-family: 'Shrikhand', cursive;
+  margin-top: 4%;
+  margin-bottom: 2.5%;
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 180%;
+}
+
+header img {
+  width: 100%;
+  position: relative;
+}
+
+main {
+  background-color: #f0f0f0;
+  border-radius: 40px 40px 0% 0%;
+  position: relative;
+  z-index: 10;
+  margin-top: -14%;
+  padding-bottom: 15%;
+}
+
+main #titre_resto {
+  margin: 0%;
+  padding-top: 8%;
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Shrikhand', cursive;
+  font-size: 170%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main #titre_resto .far {
+  margin-right: 7%;
+}
+
+main #entrées {
+  padding-bottom: 1%;
+  padding-left: 3.5%;
+  padding-right: 3.5%;
+}
+
+main #entrées #entrées {
+  color: #3b3b3b;
+  border-bottom: #91dfc1 3px solid;
+  width: 12%;
+  padding: 0%;
+  padding-bottom: 1%;
+  margin-left: 2%;
+}
+
+main #entrées ul {
+  list-style: none;
+  padding: 0%;
+}
+
+main #entrées ul li {
+  margin-bottom: 5%;
+  background-color: white;
+  padding-left: 2.5%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  line-height: 170%;
+  border-radius: 15px;
+  -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 15px;
+          box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 15px;
+}
+
+main #entrées ul li h3 {
+  margin: 0%;
+}
+
+main #entrées ul li p {
+  color: #525252;
+  margin: 0%;
+}
+
+main #entrées ul li p strong {
+  float: right;
+  margin-right: 7%;
+  color: #414141;
+}
+
+main #boutton_reservation {
+  font-family: 'Roboto', sans-serif;
+  border-radius: 30px;
+  padding-top: 4%;
+  padding-bottom: 4%;
+  color: white;
+  font-size: 93%;
+  border: none;
+  background: #000324;
+  background: linear-gradient(357deg, rgba(0, 3, 36, 0.204919) 0%, #9356dc 0%, #ff79da 100%);
+  box-shadow: 7px 10px 15px -9px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 7px 10px 15px -9px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 7px 10px 15px -9px rgba(0, 0, 0, 0.5);
+  width: 45%;
+  margin-left: 25%;
+  margin-top: 6%;
+}
+
+footer {
+  padding-left: 7%;
+  padding-right: 5%;
+  background-color: #363636;
+  color: white;
+  padding-top: 7%;
+  padding-bottom: 10%;
+}
+
+footer h3 {
+  font-family: 'Shrikhand', cursive;
+  margin-top: 0%;
+  font-weight: normal;
+}
+
+footer ul {
+  margin: 0%;
+  list-style: none;
+  padding: 0%;
+}
+
+footer ul li {
+  line-height: 180%;
+}
+
+footer ul #couverts i {
+  font-size: 80%;
+  margin-right: 4%;
+}
+
+footer ul #partenaire i {
+  font-size: 65%;
+  margin-right: 3%;
+}
+
+footer ul .mention_contact {
+  color: rgba(255, 255, 255, 0.836);
+}
+/*# sourceMappingURL=la_note_enchantée.css.map */
