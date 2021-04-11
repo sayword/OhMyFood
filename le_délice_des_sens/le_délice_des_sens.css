@@ -166,4 +166,30 @@ footer ul #partenaire i {
 footer ul .mention_contact {
   color: rgba(255, 255, 255, 0.836);
 }
+
+@media (min-width: 1604px) {
+  header img {
+    height: 740px;
+  }
+  main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  main #boutton_reservation {
+    width: 25%;
+    padding: 0%;
+    margin: 0%;
+    margin-top: 7%;
+    margin-bottom: 7%;
+    margin-left: 10%;
+    font-size: 2em;
+    font-weight: 900;
+  }
+  #entrées {
+    width: 40%;
+  }
+}
 /*# sourceMappingURL=le_délice_des_sens.css.map */
