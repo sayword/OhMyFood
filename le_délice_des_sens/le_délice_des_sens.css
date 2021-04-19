@@ -2,6 +2,30 @@
 body {
   margin: 0%;
   font-family: 'Roboto', sans-serif;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.def_plats {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0%;
+}
+
+.ensemble_id_plats {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+}
+
+.ensemble_id_plats h3 {
+  width: 100%;
 }
 
 header {
@@ -14,6 +38,7 @@ header .fas {
   font-size: 130%;
   margin-top: 2.8%;
   color: #333333;
+  text-decoration: none;
 }
 
 header p {
@@ -69,6 +94,39 @@ main #entrées {
   padding-right: 3.5%;
 }
 
+main #entrées li:hover {
+  cursor: pointer;
+}
+
+main #entrées li:hover i {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main #entrées i {
+  width: 20%;
+  display: contents;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #99E2D0;
+  color: white;
+  border-radius: 0 20% 20% 0;
+  display: none;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  -webkit-animation: slideLeft 0.5s;
+          animation: slideLeft 0.5s;
+}
+
+main #entrées i {
+  display: none;
+}
+
 main #entrées #entrées {
   color: #3b3b3b;
   border-bottom: #91dfc1 3px solid;
@@ -86,28 +144,39 @@ main #entrées ul {
 main #entrées ul li {
   margin-bottom: 5%;
   background-color: white;
-  padding-left: 2.5%;
-  padding-top: 2%;
-  padding-bottom: 2%;
   line-height: 170%;
   border-radius: 15px;
   -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 15px;
           box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-name: slidein;
+          animation-name: slidein;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
 }
 
-main #entrées ul li h3 {
+main #entrées ul li .ensemble_id_plats {
+  padding-left: 2.5%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+main #entrées ul li .ensemble_id_plats h3 {
   margin: 0%;
 }
 
-main #entrées ul li p {
+main #entrées ul li .ensemble_id_plats p {
   color: #525252;
   margin: 0%;
-}
-
-main #entrées ul li p strong {
-  float: right;
-  margin-right: 7%;
-  color: #414141;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 main #boutton_reservation {
@@ -167,6 +236,12 @@ footer ul .mention_contact {
   color: rgba(255, 255, 255, 0.836);
 }
 
+@media (max-width: 1604px) {
+  strong {
+    margin-left: 28%;
+  }
+}
+
 @media (min-width: 1604px) {
   header img {
     height: 740px;
@@ -190,6 +265,143 @@ footer ul .mention_contact {
   }
   #entrées {
     width: 40%;
+  }
+  #entrées li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+    -webkit-animation-name: slidein;
+            animation-name: slidein;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+  }
+  #entrées li .ensemble_id_plats {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+  }
+  #entrées li .ensemble_id_plats h3 {
+    width: 100%;
+  }
+  #entrées li .ensemble_id_plats .def_plats {
+    width: 80%;
+  }
+  #entrées li .ensemble_id_plats .def_plats p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #entrées li .ensemble_id_plats strong {
+    margin-left: 0%;
+  }
+  #entrées li:hover {
+    cursor: pointer;
+  }
+  #entrées li:hover i {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #entrées i {
+    width: 20%;
+    display: contents;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background: #99E2D0;
+    color: white;
+    border-radius: 0 20% 20% 0;
+    display: none;
+    -webkit-transition-duration: 0.5s;
+            transition-duration: 0.5s;
+    -webkit-animation: slideLeft 0.5s;
+            animation: slideLeft 0.5s;
+  }
+  #entrées .fa-check-circle:before {
+    -webkit-animation: spinner-rotate 0.5s;
+            animation: spinner-rotate 0.5s;
+  }
+  @-webkit-keyframes slidein {
+    from {
+      margin-top: 10%;
+      opacity: 0;
+    }
+    to {
+      margin-top: 0%;
+      opacity: 1;
+    }
+  }
+  @keyframes slidein {
+    from {
+      margin-top: 10%;
+      opacity: 0;
+    }
+    to {
+      margin-top: 0%;
+      opacity: 1;
+    }
+  }
+}
+
+@-webkit-keyframes slideLeft {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 20%;
+  }
+}
+
+@keyframes slideLeft {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 20%;
+  }
+}
+
+@-webkit-keyframes spinner-rotate {
+  0% {
+    -webkit-transform: scale(0) rotate(0deg);
+            transform: scale(0) rotate(0deg);
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s;
+  }
+  100% {
+    -webkit-transform: scale(1) rotate(360deg);
+            transform: scale(1) rotate(360deg);
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+  }
+}
+
+@keyframes spinner-rotate {
+  0% {
+    -webkit-transform: scale(0) rotate(0deg);
+            transform: scale(0) rotate(0deg);
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s;
+  }
+  100% {
+    -webkit-transform: scale(1) rotate(360deg);
+            transform: scale(1) rotate(360deg);
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
   }
 }
 /*# sourceMappingURL=le_délice_des_sens.css.map */

@@ -94,6 +94,35 @@ main #entrées {
   padding-right: 3.5%;
 }
 
+main #entrées li:hover {
+  cursor: pointer;
+}
+
+main #entrées li:hover i {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main #entrées i {
+  width: 20%;
+  display: contents;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #99E2D0;
+  color: white;
+  border-radius: 0 20% 20% 0;
+  display: none;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  -webkit-animation: slideLeft 0.5s;
+          animation: slideLeft 0.5s;
+}
+
 main #entrées i {
   display: none;
 }
@@ -119,6 +148,17 @@ main #entrées ul li {
   border-radius: 15px;
   -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 15px;
           box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-name: slidein;
+          animation-name: slidein;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
 }
 
 main #entrées ul li .ensemble_id_plats {

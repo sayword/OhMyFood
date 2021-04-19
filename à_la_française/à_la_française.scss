@@ -58,6 +58,22 @@ main{background-color: rgb(240, 240, 240);
     #entrées{padding-bottom: 1%;
             padding-left: 3.5%;
             padding-right: 3.5%;
+            li:hover{
+                cursor: pointer;
+                i{display: flex;}
+            }
+            i{width: 20%;
+                display: contents;
+                align-items: center;
+                justify-content: center;
+                background: #99E2D0;
+                color: white;
+                border-radius: 0 20% 20% 0;
+                display: none;
+                transition-duration: 0.5s;
+                animation: slideLeft 0.5s;
+                
+            }
         i{display: none;}
             #entrées{color: rgb(59, 59, 59);
                     border-bottom: rgb(145, 223, 193) 3px solid;
@@ -73,6 +89,11 @@ main{background-color: rgb(240, 240, 240);
                 line-height: 170%;
                 border-radius: 15px;
                 box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 15px;
+                display: flex;
+                flex-wrap: nowrap;
+                animation-duration: 2s;
+                animation-name: slidein;
+                animation-iteration-count: 1;
                 .ensemble_id_plats{
                     padding-left: 2.5%;
                     padding-top: 2%;
