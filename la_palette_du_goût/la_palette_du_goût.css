@@ -146,6 +146,11 @@ main .entrées {
   padding-right: 3.5%;
 }
 
+main .entrées .fa-check-circle:before {
+  -webkit-animation: spinner-rotate 0.5s;
+          animation: spinner-rotate 0.5s;
+}
+
 main .entrées li:hover {
   cursor: pointer;
 }
@@ -378,10 +383,6 @@ footer ul .mention_contact {
             transition-duration: 0.5s;
     -webkit-animation: slideLeft 0.5s;
             animation: slideLeft 0.5s;
-  }
-  .entrées .fa-check-circle:before {
-    -webkit-animation: spinner-rotate 0.5s;
-            animation: spinner-rotate 0.5s;
   }
 }
 

@@ -86,6 +86,9 @@ main{background-color: rgb(240, 240, 240);
     .entrées{padding-bottom: 1%;
             padding-left: 3.5%;
             padding-right: 3.5%;
+            .fa-check-circle:before {
+                animation: spinner-rotate 0.5s;
+            }
             li:hover{
                 cursor: pointer;
                 i{display: flex;}
@@ -252,10 +255,6 @@ footer{padding-left: 7%;
                 animation: slideLeft 0.5s;
                 
             }
-            .fa-check-circle:before {
-                animation: spinner-rotate 0.5s;
-            }
-            
         }  
 }
 @keyframes slideLeft {

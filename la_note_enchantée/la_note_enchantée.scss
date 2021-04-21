@@ -99,8 +99,10 @@ main{background-color: rgb(240, 240, 240);
                 border-radius: 0 20% 20% 0;
                 display: none;
                 transition-duration: 0.5s;
-                animation: slideLeft 0.5s;
-                
+                animation: slideLeft 0.5s;  
+            }
+            .fa-check-circle:before {
+                animation: spinner-rotate 0.5s;
             }
         i{display: none;}
             .entrées{color: rgb(59, 59, 59);
@@ -127,7 +129,10 @@ main{background-color: rgb(240, 240, 240);
                     padding-top: 2%;
                     padding-bottom: 2%;
                     h3{margin: 0%; 
-                        width: 80%;}
+                        width: 67%;
+                        white-space:nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;}
                     p{
                         color: rgb(82, 82, 82);
                         margin: 0%;        white-space:nowrap;
@@ -251,9 +256,6 @@ footer{padding-left: 7%;
                 transition-duration: 0.5s;
                 animation: slideLeft 0.5s;
                 
-            }
-            .fa-check-circle:before {
-                animation: spinner-rotate 0.5s;
             }
             
         }  

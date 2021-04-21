@@ -175,6 +175,11 @@ main .entrées i {
           animation: slideLeft 0.5s;
 }
 
+main .entrées .fa-check-circle:before {
+  -webkit-animation: spinner-rotate 0.5s;
+          animation: spinner-rotate 0.5s;
+}
+
 main .entrées i {
   display: none;
 }
@@ -221,7 +226,10 @@ main .entrées ul li .ensemble_id_plats {
 
 main .entrées ul li .ensemble_id_plats h3 {
   margin: 0%;
-  width: 80%;
+  width: 67%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 main .entrées ul li .ensemble_id_plats p {
@@ -378,10 +386,6 @@ footer ul .mention_contact {
             transition-duration: 0.5s;
     -webkit-animation: slideLeft 0.5s;
             animation: slideLeft 0.5s;
-  }
-  .entrées .fa-check-circle:before {
-    -webkit-animation: spinner-rotate 0.5s;
-            animation: spinner-rotate 0.5s;
   }
 }
 
