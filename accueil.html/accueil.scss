@@ -1,16 +1,17 @@
 
 body{margin: 0%;
     font-family: 'Roboto', sans-serif;
-    #coeur{
+    #menu{
+        i{
         z-index: 1;
         background: linear-gradient(#000000, #000000);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         -webkit-text-stroke: 0px white;
-        font-weight: 90;
+        font-weight: 100;
         font-size: 140%;
        }
-       #coeur:hover{
+       i:hover{
         font-weight: 600;
         background: linear-gradient(#FF79DA, #9356DC);
         -webkit-background-clip: text;
@@ -18,7 +19,7 @@ body{margin: 0%;
         -webkit-text-stroke: 0px white;
         animation: coeur 0.1s;
         animation-fill-mode: forwards;
-    }
+    }}
 }
 @keyframes coeur {
   from{font-size: 140%;}

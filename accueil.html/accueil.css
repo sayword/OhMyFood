@@ -3,18 +3,18 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-body #coeur {
+body #menu i {
   z-index: 1;
   background: -webkit-gradient(linear, left top, left bottom, from(#000000), to(#000000));
   background: linear-gradient(#000000, #000000);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 0px white;
-  font-weight: 90;
+  font-weight: 100;
   font-size: 140%;
 }
 
-body #coeur:hover {
+body #menu i:hover {
   font-weight: 600;
   background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   background: linear-gradient(#FF79DA, #9356DC);

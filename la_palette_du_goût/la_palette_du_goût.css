@@ -14,7 +14,7 @@ body #coeur {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 0px white;
-  font-weight: 90;
+  font-weight: 100;
   font-size: 100%;
   margin-right: 7%;
 }
@@ -140,23 +140,23 @@ main #titre_resto .far {
   margin-right: 7%;
 }
 
-main #entrées {
+main .entrées {
   padding-bottom: 1%;
   padding-left: 3.5%;
   padding-right: 3.5%;
 }
 
-main #entrées li:hover {
+main .entrées li:hover {
   cursor: pointer;
 }
 
-main #entrées li:hover i {
+main .entrées li:hover i {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-main #entrées i {
+main .entrées i {
   width: 20%;
   display: contents;
   -webkit-box-align: center;
@@ -175,11 +175,11 @@ main #entrées i {
           animation: slideLeft 0.5s;
 }
 
-main #entrées i {
+main .entrées i {
   display: none;
 }
 
-main #entrées #entrées {
+main .entrées .entrées {
   color: #3b3b3b;
   border-bottom: #91dfc1 3px solid;
   width: 12%;
@@ -188,12 +188,12 @@ main #entrées #entrées {
   margin-left: 2%;
 }
 
-main #entrées ul {
+main .entrées ul {
   list-style: none;
   padding: 0%;
 }
 
-main #entrées ul li {
+main .entrées ul li {
   margin-bottom: 5%;
   background-color: white;
   line-height: 170%;
@@ -213,18 +213,18 @@ main #entrées ul li {
           animation-iteration-count: 1;
 }
 
-main #entrées ul li .ensemble_id_plats {
+main .entrées ul li .ensemble_id_plats {
   padding-left: 2.5%;
   padding-top: 2%;
   padding-bottom: 2%;
 }
 
-main #entrées ul li .ensemble_id_plats h3 {
+main .entrées ul li .ensemble_id_plats h3 {
   margin: 0%;
   width: 80%;
 }
 
-main #entrées ul li .ensemble_id_plats p {
+main .entrées ul li .ensemble_id_plats p {
   color: #525252;
   margin: 0%;
   white-space: nowrap;
@@ -317,17 +317,17 @@ footer ul .mention_contact {
     font-size: 2em;
     font-weight: 900;
   }
-  #entrées {
+  .entrées {
     width: 40%;
   }
-  #entrées li {
+  .entrées li {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
   }
-  #entrées li .ensemble_id_plats {
+  .entrées li .ensemble_id_plats {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -335,13 +335,13 @@ footer ul .mention_contact {
         flex-wrap: wrap;
     width: 100%;
   }
-  #entrées li .ensemble_id_plats h3 {
+  .entrées li .ensemble_id_plats h3 {
     width: 100%;
   }
-  #entrées li .ensemble_id_plats .def_plats {
+  .entrées li .ensemble_id_plats .def_plats {
     width: 80%;
   }
-  #entrées li .ensemble_id_plats .def_plats p {
+  .entrées li .ensemble_id_plats .def_plats p {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -350,18 +350,18 @@ footer ul .mention_contact {
     display: -ms-flexbox;
     display: flex;
   }
-  #entrées li .ensemble_id_plats strong {
+  .entrées li .ensemble_id_plats strong {
     margin-left: 0%;
   }
-  #entrées li:hover {
+  .entrées li:hover {
     cursor: pointer;
   }
-  #entrées li:hover i {
+  .entrées li:hover i {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-  #entrées i {
+  .entrées i {
     width: 20%;
     display: contents;
     -webkit-box-align: center;
@@ -379,7 +379,7 @@ footer ul .mention_contact {
     -webkit-animation: slideLeft 0.5s;
             animation: slideLeft 0.5s;
   }
-  #entrées .fa-check-circle:before {
+  .entrées .fa-check-circle:before {
     -webkit-animation: spinner-rotate 0.5s;
             animation: spinner-rotate 0.5s;
   }
