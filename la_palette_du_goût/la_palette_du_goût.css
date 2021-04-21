@@ -7,6 +7,50 @@ body {
   margin-right: auto;
 }
 
+body #coeur {
+  z-index: 1;
+  background: -webkit-gradient(linear, left top, left bottom, from(#000000), to(#000000));
+  background: linear-gradient(#000000, #000000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 0px white;
+  font-weight: 90;
+  font-size: 100%;
+  margin-right: 7%;
+}
+
+body #coeur:hover {
+  font-weight: 600;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(#FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 0px white;
+  -webkit-animation: coeur 0.1s;
+          animation: coeur 0.1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  cursor: pointer;
+}
+
+@-webkit-keyframes coeur {
+  from {
+    font-size: 110%;
+  }
+  to {
+    font-size: 120%;
+  }
+}
+
+@keyframes coeur {
+  from {
+    font-size: 110%;
+  }
+  to {
+    font-size: 120%;
+  }
+}
+
 #boutton_reservation:hover {
   cursor: pointer;
   -webkit-transition: 0.7s;

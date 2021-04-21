@@ -1,18 +1,28 @@
 
 body{margin: 0%;
     font-family: 'Roboto', sans-serif;
-    #coeur1:hover{background: linear-gradient(#FF79DA, #9356DC);
-                    transition: 0.8s;
-                    background-size: 200%;
-                    -webkit-background-clip: text;
-                    -webkit-text-fill-color: transparent;
-                    }
-    #coeur{background: linear-gradient(#FF79DA, #9356DC);
+    #coeur{
+        z-index: 1;
+        background: linear-gradient(#000000, #000000);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         -webkit-text-stroke: 0px white;
-
+        font-weight: 90;
+        font-size: 140%;
        }
+       #coeur:hover{
+        font-weight: 600;
+        background: linear-gradient(#FF79DA, #9356DC);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke: 0px white;
+        animation: coeur 0.1s;
+        animation-fill-mode: forwards;
+    }
+}
+@keyframes coeur {
+  from{font-size: 140%;}
+  to{font-size: 160%;}
     
 }
 img{object-fit: cover;}
@@ -131,12 +141,9 @@ header{text-align: center;
                     padding-bottom: 5%;
                     
                     i{
-                        font-size: 140%;
                        margin-right: 10%;
                        margin-top: -40px;
                        float: right;
-                       font-size: 160%;
-
                        }   
                     h3{margin: 0%;
                         margin-bottom: 1.5%;
