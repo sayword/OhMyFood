@@ -7,8 +7,16 @@ body {
   margin-right: auto;
 }
 
+#boutton_reservation:hover {
+  cursor: pointer;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+}
+
 .def_plats {
-  width: 50%;
+  width: 72%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -169,6 +177,7 @@ main #entrées ul li .ensemble_id_plats {
 
 main #entrées ul li .ensemble_id_plats h3 {
   margin: 0%;
+  width: 80%;
 }
 
 main #entrées ul li .ensemble_id_plats p {
@@ -177,6 +186,7 @@ main #entrées ul li .ensemble_id_plats p {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  font-size: 90%;
 }
 
 main #boutton_reservation {
@@ -238,7 +248,7 @@ footer ul .mention_contact {
 
 @media (max-width: 1604px) {
   strong {
-    margin-left: 28%;
+    margin-left: 12%;
   }
 }
 
@@ -272,12 +282,6 @@ footer ul .mention_contact {
     display: flex;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
-    -webkit-animation-duration: 2s;
-            animation-duration: 2s;
-    -webkit-animation-name: slidein;
-            animation-name: slidein;
-    -webkit-animation-iteration-count: 1;
-            animation-iteration-count: 1;
   }
   #entrées li .ensemble_id_plats {
     display: -webkit-box;
@@ -335,26 +339,6 @@ footer ul .mention_contact {
     -webkit-animation: spinner-rotate 0.5s;
             animation: spinner-rotate 0.5s;
   }
-  @-webkit-keyframes slidein {
-    from {
-      margin-top: 10%;
-      opacity: 0;
-    }
-    to {
-      margin-top: 0%;
-      opacity: 1;
-    }
-  }
-  @keyframes slidein {
-    from {
-      margin-top: 10%;
-      opacity: 0;
-    }
-    to {
-      margin-top: 0%;
-      opacity: 1;
-    }
-  }
 }
 
 @-webkit-keyframes slideLeft {
@@ -402,6 +386,28 @@ footer ul .mention_contact {
             transform: scale(1) rotate(360deg);
     -webkit-animation-duration: 1s;
             animation-duration: 1s;
+  }
+}
+
+@-webkit-keyframes slidein {
+  from {
+    margin-top: 10%;
+    opacity: 0;
+  }
+  to {
+    margin-top: 0%;
+    opacity: 1;
+  }
+}
+
+@keyframes slidein {
+  from {
+    margin-top: 10%;
+    opacity: 0;
+  }
+  to {
+    margin-top: 0%;
+    opacity: 1;
   }
 }
 /*# sourceMappingURL=à_la_française.css.map */

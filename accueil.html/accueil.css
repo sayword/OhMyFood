@@ -3,6 +3,13 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+body .fa-heart:hover {
+  background-color: aqua;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+  background-size: 200%;
+}
+
 img {
   -o-object-fit: cover;
      object-fit: cover;
@@ -60,6 +67,14 @@ header p .fas {
   box-shadow: 7px 10px 15px -9px rgba(0, 0, 0, 0.5);
   -webkit-box-shadow: 7px 10px 15px -9px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 7px 10px 15px -9px rgba(0, 0, 0, 0.5);
+}
+
+#reservation #boutton_reservation:hover {
+  cursor: pointer;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
 }
 
 #reservation p {
@@ -124,6 +139,14 @@ header p .fas {
   color: rgba(0, 0, 0, 0.562);
 }
 
+#fonctionnement #vignette_degustez {
+  background-color: #efe4fc;
+}
+
+#fonctionnement #vignette_degustez .fas {
+  color: #9356dc;
+}
+
 #menu {
   padding-left: 5%;
   padding-right: 5%;
@@ -143,6 +166,14 @@ header p .fas {
   position: absolute;
   margin-left: 59%;
   margin-top: 4%;
+}
+
+#menu a:visited {
+  color: black;
+}
+
+#menu a {
+  text-decoration: none;
 }
 
 #menu .vignette_resto {
@@ -221,7 +252,7 @@ footer ul .mention_contact {
   color: rgba(255, 255, 255, 0.836);
 }
 
-#test {
+#loader {
   border: #9356dc 5px solid;
   border-top-color: #ff79da;
   border-bottom-color: #ff79da;
@@ -229,8 +260,6 @@ footer ul .mention_contact {
   width: 100px;
   height: 100px;
   position: absolute;
-  left: 47%;
-  top: 50%;
   -webkit-animation: loader 1.5s;
           animation: loader 1.5s;
   -webkit-animation-fill-mode: forwards;
@@ -355,8 +384,16 @@ main {
     text-align: center;
     margin-bottom: 5%;
   }
+  #menu a {
+    width: 45%;
+    margin-bottom: 2%;
+    text-decoration: none;
+  }
+  #menu a:visited {
+    color: black;
+  }
   #menu .vignette_resto {
-    width: 48%;
+    width: 100%;
     padding-bottom: 2%;
   }
 }
@@ -423,13 +460,45 @@ main {
     box-shadow: 6px 11px 22px -10px rgba(0, 0, 0, 0.47);
     -webkit-box-shadow: 6px 1px 22px -10px rgba(0, 0, 0, 0.47);
     -moz-box-shadow: 6px 11px 22px -10px rgba(0, 0, 0, 0.47);
-    width: 40%;
   }
 }
 
 @media (min-width: 1925px) {
   #menu .vignette_nouveau {
     display: none;
+  }
+}
+
+#loader {
+  left: 37%;
+  top: 42%;
+}
+
+@media (min-width: 500px) {
+  #loader {
+    left: 42%;
+    top: 42%;
+  }
+}
+
+@media (min-width: 800px) {
+  #loader {
+    left: 45%;
+    top: 42%;
+  }
+}
+
+@media (min-width: 1500px) {
+  #loader {
+    left: 46%;
+    top: 42%;
+  }
+}
+
+@media (min-width: 1700px) {
+  #loader {
+    left: 47%;
+    top: 42%;
   }
 }
 /*# sourceMappingURL=accueil.css.map */
