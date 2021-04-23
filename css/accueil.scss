@@ -19,7 +19,8 @@ body{margin: 0%;
         -webkit-text-stroke: 0px white;
         animation: coeur 0.1s;
         animation-fill-mode: forwards;
-    }}
+    }
+}
 }
 @keyframes coeur {
   from{font-size: 140%;}
@@ -135,7 +136,7 @@ header{text-align: center;
                         margin-left: 59%;
                         margin-top: 4%;}
                         a:visited{color: black;}
-                        a{text-decoration: none;}
+                        a{text-decoration: none;color: black;}
     .vignette_resto{background-color: white;
                     margin-bottom: 5%;
                     border-radius: 15px 15px 15px 15px;
